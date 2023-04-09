@@ -53,7 +53,7 @@ func main() {
 
 	// Map to convert ASCII upper characters to lower case.
 	lowerCase := Mem{Base: GP64(), Scale: 1}
-	LEAQ(NewDataAddr(Symbol{Name: "github·com∕segmentio∕asm∕ascii·lowerCase"}, 0), lowerCase.Base)
+	LEAQ(NewDataAddr(Symbol{Name: "github·com∕kamalshkeir∕kasm∕ascii·lowerCase"}, 0), lowerCase.Base)
 	XORL(cmp, cmp)
 
 	Label("cmp8")

@@ -15,11 +15,11 @@ TEXT ·EqualFoldString(SB), NOSPLIT, $0-33
 	XORQ AX, AX
 	CMPQ DX, $0x10
 	JB   init_x86
-	BTL  $0x08, github·com∕segmentio∕asm∕cpu·X86+0(SB)
+	BTL  $0x08, github·com∕kamalshkeir∕kasm∕cpu·X86+0(SB)
 	JCS  init_avx
 
 init_x86:
-	LEAQ github·com∕segmentio∕asm∕ascii·lowerCase+0(SB), R9
+	LEAQ github·com∕kamalshkeir∕kasm∕ascii·lowerCase+0(SB), R9
 	XORL SI, SI
 
 cmp8:

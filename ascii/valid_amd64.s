@@ -12,7 +12,7 @@ TEXT ·ValidString(SB), NOSPLIT, $0-17
 	MOVQ $0x8080808080808080, DX
 	CMPQ CX, $0x10
 	JB   cmp8
-	BTL  $0x08, github·com∕segmentio∕asm∕cpu·X86+0(SB)
+	BTL  $0x08, github·com∕kamalshkeir∕kasm∕cpu·X86+0(SB)
 	JCS  init_avx
 
 cmp8:

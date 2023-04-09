@@ -24,7 +24,7 @@ func JumpUnlessFeature(jmp string, f cpu.X86Feature) {
 
 // cpuAddr is a Mem operand containing the global symbolic reference to the
 // X86 cpu feature flags.
-var cpuAddr = NewDataAddr(Symbol{Name: "github·com∕segmentio∕asm∕cpu·X86"}, 0)
+var cpuAddr = NewDataAddr(Symbol{Name: "github·com∕kamalshkeir∕kasm∕cpu·X86"}, 0)
 
 func jump(jmp Op, f cpu.X86Feature, invert bool) {
 	if bits.OnesCount64(uint64(f)) == 1 {
